@@ -1,0 +1,98 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  justify-content: top;
+  
+}
+.table {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.App-link {
+  color: #61dafb;
+}
+button {
+  background-color: orange; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 8px;
+  font-size: 16px;
+  pointer-events: auto !important;
+  }
+table {
+  border-collapse: collapse;
+
+}
+td, th {
+  border: 1px solid black;
+  text-align: center;
+  padding: 8px;
+  color: black
+}
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  pointer-events: auto;
+}
+@media (max-width: 800px) {
+  .App-header{
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .App-header{
+    flex-direction: column;
+  }
+  .table {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #b95834;
+  border-left: 16px solid #b95834;
+  width: 20px;
+  height: 20px;
+  margin-top: 1.7%;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
